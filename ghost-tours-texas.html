@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghost Tours of Texas | Galveston Island's #1 Haunted Walking Tour Experience</title>
+  <meta name="description" content="Experience Galveston Island's premier haunted walking tours. Explore haunted mansions, cemeteries, and dark history with expert local guides. Book your ghost tour today!">
+  <meta name="keywords" content="ghost tours Galveston, haunted tours Texas, Galveston ghost tour, haunted walking tour, ghost tours near me, Galveston haunted, paranormal tours Texas">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Ghost Tours of Texas | Galveston's #1 Haunted Experience">
+  <meta property="og:description" content="Dare to walk the haunted streets of Galveston Island. Murder, revenge, passion, and restless spirits await.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ghosttourstexas.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://ghosttourstexas.com">
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "Ghost Tours of Texas",
+    "description": "Galveston Island's premier haunted walking tour experience featuring historic mansions, cemeteries, and dark history.",
+    "url": "https://ghosttourstexas.com",
+    "telephone": "(409) 555-1234",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "24th St & Sealy Ave",
+      "addressLocality": "Galveston",
+      "addressRegion": "TX",
+      "postalCode": "77550"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "29.2984",
+      "longitude": "-94.7977"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "2420"
+    },
+    "priceRange": "$20-$38"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       RESET & FOUNDATION
+       ═══════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background: #0a0a0f;
+      color: #e8e4df;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; }
+    input, select, textarea { font-family: inherit; }
+
+    /* ═══════════════════════════════════════════════════
+       CSS VARIABLES
+       ═══════════════════════════════════════════════════ */
+    :root {
+      --bg: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a25;
+      --bg-elevated: #1e1e2a;
+      --accent: #c4553a;
+      --accent-light: #e06b50;
+      --accent-glow: rgba(196, 85, 58, 0.3);
+      --gold: #c9a84c;
+      --gold-dim: #a08535;
+      --text: #e8e4df;
+      --text-dim: #8a8580;
+      --text-muted: #5a5550;
+      --border: rgba(200, 195, 188, 0.08);
+      --border-light: rgba(200, 195, 188, 0.15);
+      --success: #4caf7c;
+      --warning: #e6a23c;
+      --danger: #e05555;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       SCROLLBAR
+       ═══════════════════════════════════════════════════ */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: rgba(200,195,188,0.15); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(200,195,188,0.25); }
+
+    /* ═══════════════════════════════════════════════════
+       ANIMATIONS
+       ═══════════════════════════════════════════════════ */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes ghostFloat {
+      0%, 100% { transform: translateY(0); opacity: 0.3; }
+      50% { transform: translateY(-20px); opacity: 0.6; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 20px var(--accent-glow); }
+      50% { box-shadow: 0 0 40px var(--accent-glow), 0 0 60px rgba(196, 85, 58, 0.15); }
+    }
+    @keyframes slideDown {
+      from { opacity: 0; max-height: 0; }
+      to { opacity: 1; max-height: 500px; }
+    }
+    @keyframes countUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in { animation: fadeInUp 0.8s ease forwards; }
+    .fade-in-delay-1 { animation: fadeInUp 0.8s ease 0.2s forwards; opacity: 0; }
+    .fade-in-delay-2 { animation: fadeInUp 0.8s ease 0.4s forwards; opacity: 0; }
+    .fade-in-delay-3 { animation: fadeInUp 0.8s ease 0.6s forwards; opacity: 0; }
+
+    /* ═══════════════════════════════════════════════════
+       GHOST PARTICLES
+       ═══════════════════════════════════════════════════ */
+    .ghost-particles {
+      position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden;
+    }
+    .ghost-particle {
+      position: absolute; border-radius: 50%;
+      background: radial-gradient(circle, rgba(200,195,188,0.18), transparent);
+      animation: ghostFloat 10s ease-in-out infinite;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════════ */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 18px 0; transition: all 0.4s ease;
+    }
+    .navbar.scrolled {
+      padding: 10px 0;
+      background: rgba(10, 10, 15, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12; cursor: pointer; }
+    .nav-logo-icon { font-size: 28px; filter: drop-shadow(0 0 8px rgba(196, 85, 58, 0.5)); }
+    .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; letter-spacing: 0.5px; line-height: 1.1; }
+    .nav-logo-sub { font-size: 11px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 4; }
+    .nav-link {
+      background: transparent; border: none; color: var(--text-dim);
+      font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 600;
+      letter-spacing: 1px; text-transform: uppercase; padding: 8px 16px;
+      transition: color 0.3s; border-radius: 0;
+    }
+    .nav-link:hover { color: var(--gold); }
+    .nav-link.active { color: var(--gold); }
+    .nav-link.cta {
+      background: var(--accent); color: #fff; padding: 10px 24px; border-radius: 4px;
+      margin-left: 8px;
+    }
+    .nav-link.cta:hover { background: var(--accent-light); }
+    .nav-link.admin-toggle {
+      background: transparent; border: 1px solid var(--border-light); color: var(--text-muted);
+      padding: 8px 14px; border-radius: 4px; font-size: 12px; margin-left: 4px;
+    }
+    .nav-link.admin-toggle:hover, .nav-link.admin-toggle.active { border-color: var(--gold); color: var(--gold); }
+    .mobile-toggle {
+      display: none; background: none; border: none; color: var(--text); font-size: 26px;
+    }
+    .mobile-menu {
+      display: none; background: rgba(10,10,15,0.98); padding: 12px 24px;
+      border-top: 1px solid var(--border);
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu .nav-link {
+      display: block; width: 100%; text-align: left; padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════════════ */
+    .hero {
+      position: relative; min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; text-align: center;
+      padding: 120px 24px 80px; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background-image: url('https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=1920&q=80');
+      background-size: cover; background-position: center;
+    }
+    .hero-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(180deg,
+        rgba(10,10,15,0.6) 0%,
+        rgba(10,10,15,0.75) 40%,
+        rgba(10,10,15,0.92) 80%,
+        rgba(10,10,15,1) 100%
+      );
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 820px; }
+    .hero-badge {
+      font-size: 13px; letter-spacing: 6px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(44px, 7vw, 82px);
+      font-weight: 700; line-height: 1.05; margin: 0 0 8px;
+      text-shadow: 0 0 80px rgba(196, 85, 58, 0.3);
+    }
+    .hero h1 .gradient-text {
+      background-image: linear-gradient(135deg, var(--accent), var(--gold));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .hero-sub {
+      font-size: clamp(18px, 2.5vw, 24px); color: var(--text-dim);
+      line-height: 1.7; max-width: 600; margin: 24px auto 48px;
+    }
+    .hero-buttons { display: flex; gap: 16; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-light));
+      border: none; color: #fff; font-family: 'Cormorant Garamond', serif;
+      font-size: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      padding: 16px 40px; border-radius: 4px;
+      box-shadow: 0 4px 30px var(--accent-glow); transition: all 0.3s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 40px var(--accent-glow); }
+    .btn-outline {
+      background: transparent; border: 1px solid var(--border-light); color: var(--text);
+      font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase; padding: 16px 40px;
+      border-radius: 4px; transition: all 0.3s;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+    .hero-stats {
+      display: flex; gap: 40; justify-content: center; flex-wrap: wrap; margin-top: 64;
+    }
+    .hero-stat-value {
+      font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: var(--gold);
+    }
+    .hero-stat-label {
+      font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--text-muted); margin-top: 4px;
+    }
+    .hero-scroll {
+      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 2;
+      animation: ghostFloat 3s ease-in-out infinite; opacity: 0.4;
+    }
+    .hero-scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, transparent, var(--text-muted));
+      margin: 0 auto;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       SECTION HEADERS
+       ═══════════════════════════════════════════════════ */
+    .section-header { text-align: center; margin-bottom: 56px; }
+    .section-label {
+      font-size: 12px; letter-spacing: 5px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 44px);
+      font-weight: 700; margin: 0 0 16px; line-height: 1.2;
+    }
+    .section-subtitle {
+      font-size: 18px; color: var(--text-dim); max-width: 600;
+      margin: 0 auto; line-height: 1.6;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       TOUR CARDS
+       ═══════════════════════════════════════════════════ */
+    .tours-section { padding: 100px 24px; max-width: 1200px; margin: 0 auto; }
+    .tours-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;
+    }
+    .tour-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      overflow: hidden; transition: all 0.4s ease; display: flex; flex-direction: column;
+      position: relative;
+    }
+    .tour-card:hover {
+      transform: translateY(-4px); border-color: var(--border-light);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 40px var(--accent-glow);
+    }
+    .tour-card-badge {
+      position: absolute; top: 16px; right: 16px; z-index: 2;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dim));
+      color: var(--bg); font-size: 10px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase; padding: 4px 12px; border-radius: 3px;
+    }
+    .tour-card-image {
+      width: 100%; height: 200px; object-fit: cover;
+      border-bottom: 1px solid var(--border);
+      filter: brightness(0.7) saturate(0.8);
+      transition: all 0.4s;
+    }
+    .tour-card:hover .tour-card-image { filter: brightness(0.85) saturate(1); }
+    .tour-card-body { padding: 24px 28px; flex: 1; display: flex; flex-direction: column; }
+    .tour-card-tagline {
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 6px;
+    }
+    .tour-card-name {
+      font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin: 0 0 12px;
+    }
+    .tour-card-desc {
+      font-size: 15px; color: var(--text-dim); line-height: 1.7; flex: 1; margin-bottom: 16px;
+    }
+    .tour-card-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .tour-tag {
+      background: rgba(200,195,188,0.06); border: 1px solid var(--border);
+      border-radius: 3px; padding: 4px 10px; font-size: 12px; letter-spacing: 1px;
+      color: var(--text-dim);
+    }
+    .tour-card-footer {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      border-top: 1px solid var(--border); padding-top: 16px;
+    }
+    .tour-rating { font-size: 13px; color: var(--gold); }
+    .tour-reviews { font-size: 11px; color: var(--text-muted); }
+    .tour-price { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; text-align: right; }
+    .tour-price-sub { font-size: 11px; color: var(--text-muted); font-family: 'Cormorant Garamond', serif; font-weight: 400; }
+    .tour-card-btn {
+      width: 100%; margin-top: 16px; padding: 14px 0; border-radius: 4px;
+      font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      text-align: center; border: 1px solid var(--border-light); background: transparent;
+      color: var(--text); transition: all 0.3s;
+    }
+    .tour-card:hover .tour-card-btn {
+      background: linear-gradient(135deg, var(--accent), var(--accent-light));
+      border-color: var(--accent); color: #fff;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       LOCATIONS SECTION
+       ═══════════════════════════════════════════════════ */
+    .locations-section {
+      padding: 100px 24px;
+      background: linear-gradient(180deg, transparent, rgba(196,85,58,0.03), transparent);
+    }
+    .locations-inner { max-width: 1200px; margin: 0 auto; }
+    .locations-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; align-items: start; }
+    .location-btn {
+      display: flex; align-items: center; gap: 16px; padding: 16px 20px; width: 100%;
+      background: transparent; border: 1px solid transparent; border-radius: 6px;
+      text-align: left; transition: all 0.3s; cursor: pointer;
+    }
+    .location-btn.active {
+      background: rgba(196,85,58,0.1); border-color: var(--accent);
+    }
+    .location-dot {
+      width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0;
+      transition: all 0.3s;
+    }
+    .location-btn.active .location-dot {
+      background: var(--accent); box-shadow: 0 0 12px var(--accent-glow);
+    }
+    .location-name {
+      font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600;
+      color: var(--text-dim); transition: color 0.3s;
+    }
+    .location-btn.active .location-name { color: var(--text); }
+    .location-meta { font-size: 12px; color: var(--text-muted); letter-spacing: 1px; }
+    .location-detail {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      overflow: hidden; position: relative;
+    }
+    .location-detail-img {
+      width: 100%; height: 250px; object-fit: cover;
+      filter: brightness(0.6) saturate(0.7);
+    }
+    .location-detail-body { padding: 32px; position: relative; }
+    .location-detail-year {
+      position: absolute; top: -30px; right: 32px;
+      font-family: 'Playfair Display', serif; font-size: 100px; font-weight: 700;
+      color: rgba(196,85,58,0.06); line-height: 1; pointer-events: none;
+    }
+    .location-detail-type {
+      font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 12px;
+    }
+    .location-detail-name {
+      font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; margin: 0 0 8px;
+    }
+    .location-detail-desc {
+      font-size: 17px; color: var(--text-dim); line-height: 1.8; margin-top: 16px;
+    }
+    .location-badges { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+    .location-badge {
+      padding: 8px 16px; border-radius: 4px; font-size: 12px; letter-spacing: 1px;
+    }
+    .location-badge.paranormal { background: rgba(196,85,58,0.08); color: var(--accent); }
+    .location-badge.featured { background: rgba(201,168,76,0.08); color: var(--gold); }
+
+    /* ═══════════════════════════════════════════════════
+       GUIDES SECTION
+       ═══════════════════════════════════════════════════ */
+    .guides-section { padding: 100px 24px; max-width: 1200px; margin: 0 auto; }
+    .guides-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .guide-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      overflow: hidden; transition: all 0.3s;
+    }
+    .guide-card:hover { border-color: var(--border-light); transform: translateY(-3px); }
+    .guide-card-img {
+      width: 100%; height: 280px; object-fit: cover;
+      filter: brightness(0.65) saturate(0.6) sepia(0.2);
+      transition: all 0.4s;
+    }
+    .guide-card:hover .guide-card-img { filter: brightness(0.75) saturate(0.8) sepia(0.1); }
+    .guide-card-body { padding: 28px; text-align: center; }
+    .guide-specialty {
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 6px;
+    }
+    .guide-name {
+      font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; margin: 0 0 4px;
+    }
+    .guide-title { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+    .guide-bio { font-size: 15px; color: var(--text-dim); line-height: 1.7; }
+
+    /* ═══════════════════════════════════════════════════
+       TESTIMONIALS
+       ═══════════════════════════════════════════════════ */
+    .testimonials-section {
+      padding: 100px 24px;
+      background: linear-gradient(180deg, transparent, rgba(201,168,76,0.02), transparent);
+    }
+    .testimonials-inner { max-width: 900px; margin: 0 auto; }
+    .testimonial-carousel {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;
+    }
+    .testimonial-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      padding: 32px; position: relative;
+    }
+    .testimonial-quote {
+      position: absolute; top: 16px; left: 24px;
+      font-family: 'Playfair Display', serif; font-size: 60px;
+      color: rgba(196,85,58,0.1); line-height: 1;
+    }
+    .testimonial-stars { color: var(--gold); font-size: 16px; letter-spacing: 3px; margin-bottom: 16px; }
+    .testimonial-text {
+      font-size: 16px; font-style: italic; color: var(--text); line-height: 1.7; margin-bottom: 20px;
+    }
+    .testimonial-author { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 600; }
+    .testimonial-meta { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+    /* ═══════════════════════════════════════════════════
+       BOOKING SECTION
+       ═══════════════════════════════════════════════════ */
+    .booking-section {
+      padding: 100px 24px;
+      background: linear-gradient(180deg, transparent, rgba(196,85,58,0.04), transparent);
+    }
+    .booking-inner { max-width: 900px; margin: 0 auto; }
+    .booking-mode-toggle {
+      display: flex; justify-content: center; gap: 4px; margin-bottom: 40px;
+      background: var(--bg-card); border-radius: 6px; padding: 4px;
+      max-width: 400px; margin: 0 auto 40px;
+    }
+    .booking-mode-btn {
+      flex: 1; padding: 12px 16px; background: transparent; border: none;
+      border-radius: 4px; color: var(--text-dim); font-size: 13px;
+      font-weight: 600; letter-spacing: 0.5px; transition: all 0.3s;
+    }
+    .booking-mode-btn.active { background: var(--accent); color: #fff; }
+    .booking-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      overflow: hidden;
+    }
+    .booking-steps {
+      display: flex; border-bottom: 1px solid var(--border);
+    }
+    .booking-step {
+      flex: 1; padding: 16px 12px; text-align: center; font-size: 13px;
+      letter-spacing: 1px; color: var(--text-muted); background: transparent;
+      border: none; border-bottom: 2px solid transparent; transition: all 0.3s;
+    }
+    .booking-step.active { color: var(--text); background: rgba(196,85,58,0.08); border-bottom-color: var(--accent); }
+    .booking-step.completed { color: var(--gold); }
+    .booking-body { padding: 32px 40px; }
+    .booking-tour-option {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 20px; background: transparent;
+      border: 1px solid var(--border); border-radius: 6px;
+      cursor: pointer; text-align: left; transition: all 0.3s; width: 100%;
+      margin-bottom: 8px;
+    }
+    .booking-tour-option.selected { background: rgba(196,85,58,0.1); border-color: var(--accent); }
+    .booking-tour-name { font-family: 'Playfair Display', serif; font-size: 16px; }
+    .booking-tour-meta { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+    .booking-tour-price { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--gold); }
+    .form-group { margin-bottom: 16px; }
+    .form-label {
+      display: block; font-size: 13px; color: var(--text-muted);
+      margin-bottom: 6px; text-transform: capitalize;
+    }
+    .form-input {
+      width: 100%; padding: 14px 16px; background: rgba(200,195,188,0.05);
+      border: 1px solid var(--border-light); border-radius: 6px; color: var(--text);
+      font-size: 16px; outline: none; transition: border-color 0.3s;
+    }
+    .form-input:focus { border-color: var(--accent); }
+    .form-input::placeholder { color: rgba(200,195,188,0.3); }
+    .guest-stepper { display: flex; align-items: center; gap: 12px; }
+    .stepper-btn {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(200,195,188,0.06); border: 1px solid var(--border-light);
+      color: var(--text); font-size: 18px; display: flex;
+      align-items: center; justify-content: center; transition: all 0.3s;
+    }
+    .stepper-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .stepper-value {
+      font-family: 'Playfair Display', serif; font-size: 20px;
+      width: 30px; text-align: center;
+    }
+    .booking-nav {
+      display: flex; justify-content: space-between; margin-top: 32px;
+    }
+    .booking-summary {
+      background: rgba(200,195,188,0.04); border-radius: 6px; padding: 24px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+    .summary-label { font-size: 12px; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
+    .summary-value { font-size: 16px; margin-top: 4px; }
+    .booking-total {
+      margin-top: 20px; padding: 20px 24px; background: rgba(196,85,58,0.08);
+      border-radius: 6px; border: 1px solid rgba(196,85,58,0.2);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .total-amount { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; }
+    .booking-confirmed { text-align: center; padding: 40px 0; }
+    .booking-confirmed-icon { font-size: 64px; margin-bottom: 16px; }
+    .fareharbor-embed {
+      background: rgba(200,195,188,0.04); border: 2px dashed var(--border);
+      border-radius: 8px; padding: 60px 24px; text-align: center; margin: 24px 0;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       FAQ SECTION
+       ═══════════════════════════════════════════════════ */
+    .faq-section { padding: 100px 24px; max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      border-radius: 6px; overflow: hidden; transition: all 0.3s; margin-bottom: 4px;
+    }
+    .faq-item.open { background: var(--bg-card); border: 1px solid var(--border); }
+    .faq-question {
+      width: 100%; display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 24px; background: transparent; border: none; cursor: pointer; text-align: left;
+    }
+    .faq-question-text {
+      font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 600;
+      color: var(--text-dim); transition: color 0.3s;
+    }
+    .faq-item.open .faq-question-text { color: var(--text); }
+    .faq-toggle { color: var(--text-muted); font-size: 20px; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px; }
+    .faq-item.open .faq-toggle { transform: rotate(45deg); }
+    .faq-answer {
+      padding: 0 24px 20px; font-size: 16px; color: var(--text-dim); line-height: 1.7;
+      display: none;
+    }
+    .faq-item.open .faq-answer { display: block; animation: slideDown 0.3s ease; }
+
+    /* ═══════════════════════════════════════════════════
+       BLOG SECTION
+       ═══════════════════════════════════════════════════ */
+    .blog-section { padding: 100px 24px; max-width: 1200px; margin: 0 auto; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+    .blog-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      overflow: hidden; transition: all 0.3s;
+    }
+    .blog-card:hover { transform: translateY(-3px); border-color: var(--border-light); }
+    .blog-card-img {
+      width: 100%; height: 200px; object-fit: cover;
+      filter: brightness(0.6) saturate(0.7); transition: all 0.4s;
+    }
+    .blog-card:hover .blog-card-img { filter: brightness(0.75) saturate(0.85); }
+    .blog-card-body { padding: 24px; }
+    .blog-card-date { font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 8px; }
+    .blog-card-title {
+      font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700;
+      margin: 0 0 12px; line-height: 1.3;
+    }
+    .blog-card-excerpt { font-size: 15px; color: var(--text-dim); line-height: 1.7; margin-bottom: 16px; }
+    .blog-card-link {
+      font-size: 13px; color: var(--accent); font-weight: 600; letter-spacing: 1px;
+      text-transform: uppercase; transition: color 0.3s;
+    }
+    .blog-card-link:hover { color: var(--accent-light); }
+
+    /* ═══════════════════════════════════════════════════
+       CTA BANNER
+       ═══════════════════════════════════════════════════ */
+    .cta-banner { padding: 80px 24px; text-align: center; position: relative; overflow: hidden; }
+    .cta-banner-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(196,85,58,0.08), transparent 70%);
+    }
+    .cta-banner-content { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
+    .cta-banner h2 {
+      font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 38px);
+      font-weight: 700; margin: 0 0 16px;
+    }
+    .cta-banner p { font-size: 18px; color: var(--text-dim); margin-bottom: 32px; line-height: 1.6; }
+    .cta-phone {
+      display: inline-flex; align-items: center; gap: 8px; color: var(--text-dim);
+      font-size: 16px; font-weight: 600; letter-spacing: 1px; padding: 16px 24px;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       NEWSLETTER
+       ═══════════════════════════════════════════════════ */
+    .newsletter-section {
+      padding: 60px 24px; background: var(--bg-card);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    }
+    .newsletter-inner { max-width: 500px; margin: 0 auto; text-align: center; }
+    .newsletter-form { display: flex; gap: 8px; }
+    .newsletter-input {
+      flex: 1; padding: 14px 16px; background: rgba(200,195,188,0.05);
+      border: 1px solid var(--border-light); border-radius: 4px;
+      color: var(--text); font-size: 15px; outline: none;
+    }
+    .newsletter-btn {
+      background: linear-gradient(135deg, var(--accent), var(--accent-light));
+      border: none; color: #fff; font-size: 13px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase; padding: 14px 24px;
+      border-radius: 4px; white-space: nowrap;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════ */
+    .footer { border-top: 1px solid var(--border); padding: 60px 24px 40px; }
+    .footer-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
+    }
+    .footer-brand-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; max-width: 280px; }
+    .footer-social { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+    .footer-social a {
+      padding: 6px 12px; background: rgba(200,195,188,0.05);
+      border: 1px solid var(--border); border-radius: 4px;
+      font-size: 11px; color: var(--text-muted); letter-spacing: 0.5px;
+      transition: all 0.3s;
+    }
+    .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+    .footer-heading {
+      font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--gold); margin: 0 0 16px;
+    }
+    .footer-link { font-size: 14px; color: var(--text-muted); margin-bottom: 8px; cursor: pointer; transition: color 0.3s; }
+    .footer-link:hover { color: var(--gold); }
+    .footer-bottom {
+      max-width: 1200px; margin: 40px auto 0; padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-copyright { font-size: 12px; color: var(--text-muted); }
+    .footer-legal { display: flex; gap: 20px; }
+    .footer-legal span { font-size: 12px; color: var(--text-muted); cursor: pointer; }
+
+    /* ═══════════════════════════════════════════════════
+       ADMIN DASHBOARD
+       ═══════════════════════════════════════════════════ */
+    .admin-overlay {
+      display: none; position: fixed; inset: 0; z-index: 2000;
+      background: var(--bg); overflow-y: auto;
+    }
+    .admin-overlay.active { display: block; }
+    .admin-header {
+      background: var(--bg-card); border-bottom: 1px solid var(--border);
+      padding: 16px 24px; display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 10;
+    }
+    .admin-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; }
+    .admin-close {
+      background: transparent; border: 1px solid var(--border-light); color: var(--text-dim);
+      padding: 8px 20px; border-radius: 4px; font-size: 13px; letter-spacing: 1px;
+    }
+    .admin-close:hover { border-color: var(--accent); color: var(--accent); }
+    .admin-tabs {
+      display: flex; gap: 0; background: var(--bg-card);
+      border-bottom: 1px solid var(--border); padding: 0 24px;
+    }
+    .admin-tab {
+      padding: 16px 24px; background: transparent; border: none;
+      font-size: 14px; font-weight: 600; letter-spacing: 0.5px;
+      color: var(--text-muted); border-bottom: 2px solid transparent;
+      transition: all 0.3s;
+    }
+    .admin-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+    .admin-tab:hover { color: var(--text-dim); }
+    .admin-content { max-width: 1400px; margin: 0 auto; padding: 32px 24px; }
+    .admin-panel { display: none; }
+    .admin-panel.active { display: block; }
+
+    /* Stats cards */
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+    .stat-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      padding: 24px;
+    }
+    .stat-card-label { font-size: 12px; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+    .stat-card-value { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; }
+    .stat-card-change { font-size: 13px; margin-top: 4px; }
+    .stat-card-change.up { color: var(--success); }
+    .stat-card-change.down { color: var(--danger); }
+
+    /* Chart area */
+    .chart-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      padding: 24px; margin-bottom: 24px;
+    }
+    .chart-header {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;
+    }
+    .chart-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; }
+    .chart-filters { display: flex; gap: 4px; }
+    .chart-filter {
+      padding: 6px 14px; background: transparent; border: 1px solid var(--border);
+      border-radius: 4px; color: var(--text-muted); font-size: 12px;
+      letter-spacing: 0.5px; transition: all 0.3s;
+    }
+    .chart-filter.active { border-color: var(--gold); color: var(--gold); background: rgba(201,168,76,0.08); }
+    .chart-bars { display: flex; align-items: flex-end; gap: 8px; height: 200px; padding-top: 20px; }
+    .chart-bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+    .chart-bar {
+      width: 100%; border-radius: 4px 4px 0 0;
+      background: linear-gradient(180deg, var(--accent), rgba(196,85,58,0.3));
+      transition: all 0.5s ease; min-height: 4px; position: relative;
+    }
+    .chart-bar:hover { background: linear-gradient(180deg, var(--accent-light), rgba(196,85,58,0.5)); }
+    .chart-bar-label { font-size: 11px; color: var(--text-muted); }
+    .chart-bar-value {
+      position: absolute; top: -22px; left: 50%; transform: translateX(-50%);
+      font-size: 11px; color: var(--text-dim); white-space: nowrap;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Data table */
+    .data-table { width: 100%; border-collapse: collapse; }
+    .data-table th {
+      text-align: left; padding: 12px 16px; font-size: 12px;
+      color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table td {
+      padding: 14px 16px; font-size: 14px; border-bottom: 1px solid var(--border);
+      color: var(--text-dim);
+    }
+    .data-table tr:hover td { background: rgba(200,195,188,0.02); }
+    .status-badge {
+      display: inline-block; padding: 4px 10px; border-radius: 12px;
+      font-size: 11px; font-weight: 600; letter-spacing: 0.5px;
+    }
+    .status-badge.confirmed { background: rgba(76,175,124,0.15); color: var(--success); }
+    .status-badge.pending { background: rgba(230,162,60,0.15); color: var(--warning); }
+    .status-badge.cancelled { background: rgba(224,85,85,0.15); color: var(--danger); }
+
+    /* Tour capacity bars */
+    .capacity-item { margin-bottom: 16px; }
+    .capacity-header { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 14px; }
+    .capacity-bar-bg {
+      height: 8px; background: rgba(200,195,188,0.06); border-radius: 4px; overflow: hidden;
+    }
+    .capacity-bar-fill {
+      height: 100%; border-radius: 4px; transition: width 0.8s ease;
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+    }
+
+    /* Blog admin */
+    .blog-admin-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+      padding: 20px; display: flex; gap: 20px; align-items: center; margin-bottom: 12px;
+    }
+    .blog-admin-status { font-size: 12px; color: var(--success); font-weight: 600; }
+    .blog-admin-actions { display: flex; gap: 8px; margin-left: auto; }
+    .blog-admin-btn {
+      padding: 6px 14px; background: transparent; border: 1px solid var(--border);
+      border-radius: 4px; color: var(--text-muted); font-size: 12px; transition: all 0.3s;
+    }
+    .blog-admin-btn:hover { border-color: var(--gold); color: var(--gold); }
+    .blog-admin-btn.delete:hover { border-color: var(--danger); color: var(--danger); }
+
+    /* ═══════════════════════════════════════════════════
+       RESPONSIVE
+       ═══════════════════════════════════════════════════ */
+    @media (max-width: 960px) {
+      .locations-grid { grid-template-columns: 1fr !important; }
+      .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none !important; }
+      .mobile-toggle { display: block !important; }
+      .hero h1 { font-size: 40px; }
+      .hero-stats { gap: 24px; }
+      .tours-grid { grid-template-columns: 1fr; }
+      .guides-grid { grid-template-columns: 1fr; }
+      .testimonial-carousel { grid-template-columns: 1fr; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .booking-body { padding: 24px 20px; }
+      .booking-steps { overflow-x: auto; }
+      .booking-step { font-size: 11px; white-space: nowrap; padding: 12px 10px; }
+      .booking-summary { grid-template-columns: 1fr; }
+      .admin-tabs { overflow-x: auto; }
+      .admin-tab { white-space: nowrap; padding: 12px 16px; font-size: 12px; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .data-table { font-size: 12px; }
+      .data-table th, .data-table td { padding: 10px 8px; }
+      .newsletter-form { flex-direction: column; }
+      .blog-admin-card { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr !important; }
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .stats-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════ GHOST PARTICLES ═══════ -->
+<div class="ghost-particles" id="particles"></div>
+
+<!-- ═══════ NAVIGATION ═══════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero">
+      <span class="nav-logo-icon">👻</span>
+      <div>
+        <div class="nav-logo-text">GHOST TOURS</div>
+        <div class="nav-logo-sub">TEXAS</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="#tours">Tours</a>
+      <a class="nav-link" href="#locations">Haunted Sites</a>
+      <a class="nav-link" href="#guides">Guides</a>
+      <a class="nav-link" href="#testimonials">Reviews</a>
+      <a class="nav-link" href="#blog">Blog</a>
+      <a class="nav-link" href="#faq">FAQ</a>
+      <a class="nav-link cta" href="#booking">Book Now</a>
+      <button class="nav-link admin-toggle" onclick="toggleAdmin()">⚙ Admin</button>
+    </div>
+    <button class="mobile-toggle" onclick="toggleMobile()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="nav-link" href="#tours" onclick="closeMobile()">Tours</a>
+    <a class="nav-link" href="#locations" onclick="closeMobile()">Haunted Sites</a>
+    <a class="nav-link" href="#guides" onclick="closeMobile()">Guides</a>
+    <a class="nav-link" href="#testimonials" onclick="closeMobile()">Reviews</a>
+    <a class="nav-link" href="#blog" onclick="closeMobile()">Blog</a>
+    <a class="nav-link" href="#faq" onclick="closeMobile()">FAQ</a>
+    <a class="nav-link cta" href="#booking" onclick="closeMobile()" style="display:block;text-align:center;margin-top:8px">Book Now</a>
+    <button class="nav-link admin-toggle" onclick="toggleAdmin();closeMobile()" style="display:block;width:100%;margin-top:8px;text-align:center">⚙ Admin Dashboard</button>
+  </div>
+</nav>
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="fade-in">
+      <div class="hero-badge">Galveston Island's Premier Haunted Experience</div>
+      <h1>Ghost Tours<br><span class="gradient-text">of Texas</span></h1>
+    </div>
+    <p class="hero-sub fade-in-delay-1">Dare to walk the haunted streets of Galveston Island. Murder, revenge, passion, and restless spirits await in America's most haunted city.</p>
+    <div class="hero-buttons fade-in-delay-2">
+      <a class="btn-primary" href="#booking">Book Your Tour</a>
+      <a class="btn-outline" href="#tours">View Tours</a>
+    </div>
+    <div class="hero-stats fade-in-delay-3">
+      <div style="text-align:center"><div class="hero-stat-value">4.9★</div><div class="hero-stat-label">Average Rating</div></div>
+      <div style="text-align:center"><div class="hero-stat-value">2,400+</div><div class="hero-stat-label">Tours Given</div></div>
+      <div style="text-align:center"><div class="hero-stat-value">10+</div><div class="hero-stat-label">Years Running</div></div>
+      <div style="text-align:center"><div class="hero-stat-value">#1</div><div class="hero-stat-label">On Galveston Island</div></div>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="hero-scroll-line"></div></div>
+</section>
+
+<!-- ═══════ TOURS ═══════ -->
+<section class="tours-section" id="tours">
+  <div class="section-header">
+    <div class="section-label">Choose Your Haunting</div>
+    <h2 class="section-title">Our Ghost Tour Experiences</h2>
+    <p class="section-subtitle">From family-friendly history walks to adults-only dark adventures, every tour reveals a different shade of Galveston's haunted past.</p>
+  </div>
+  <div class="tours-grid" id="toursGrid"></div>
+</section>
+
+<!-- ═══════ LOCATIONS ═══════ -->
+<section class="locations-section" id="locations">
+  <div class="locations-inner">
+    <div class="section-header">
+      <div class="section-label">Paranormal Hotspots</div>
+      <h2 class="section-title">Galveston's Most Haunted Locations</h2>
+      <p class="section-subtitle">Each location carries centuries of dark history and documented paranormal activity.</p>
+    </div>
+    <div class="locations-grid">
+      <div id="locationsList"></div>
+      <div id="locationDetail" class="location-detail"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ GUIDES ═══════ -->
+<section class="guides-section" id="guides">
+  <div class="section-header">
+    <div class="section-label">Meet Your Storytellers</div>
+    <h2 class="section-title">Expert Local Guides</h2>
+    <p class="section-subtitle">Our passionate guides are historians, investigators, and master storytellers who bring Galveston's haunted past to life.</p>
+  </div>
+  <div class="guides-grid" id="guidesGrid"></div>
+</section>
+
+<!-- ═══════ TESTIMONIALS ═══════ -->
+<section class="testimonials-section" id="testimonials">
+  <div class="testimonials-inner">
+    <div class="section-header">
+      <div class="section-label">Don't Take Our Word For It</div>
+      <h2 class="section-title">What Our Guests Say</h2>
+      <p class="section-subtitle">Thousands of five-star reviews from brave souls who dared to walk with us.</p>
+    </div>
+    <div class="testimonial-carousel" id="testimonialsGrid"></div>
+  </div>
+</section>
+
+<!-- ═══════ BOOKING ═══════ -->
+<section class="booking-section" id="booking">
+  <div class="booking-inner">
+    <div class="section-header">
+      <div class="section-label">Reserve Your Spot</div>
+      <h2 class="section-title">Book Your Ghost Tour</h2>
+      <p class="section-subtitle">Secure your place on Galveston's most thrilling haunted experience.</p>
+    </div>
+    <div class="booking-mode-toggle">
+      <button class="booking-mode-btn active" onclick="setBookingMode('fareharbor')">Quick Book (FareHarbor)</button>
+      <button class="booking-mode-btn" onclick="setBookingMode('custom')">Custom Booking</button>
+    </div>
+    <div id="bookingContent"></div>
+  </div>
+</section>
+
+<!-- ═══════ BLOG ═══════ -->
+<section class="blog-section" id="blog">
+  <div class="section-header">
+    <div class="section-label">Ghost Stories & History</div>
+    <h2 class="section-title">From the Shadows</h2>
+    <p class="section-subtitle">Dive deeper into Galveston's haunted history with our latest stories and investigations.</p>
+  </div>
+  <div class="blog-grid" id="blogGrid"></div>
+</section>
+
+<!-- ═══════ FAQ ═══════ -->
+<section class="faq-section" id="faq">
+  <div class="section-header">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Everything you need to know before your haunted adventure.</p>
+  </div>
+  <div id="faqList"></div>
+</section>
+
+<!-- ═══════ CTA BANNER ═══════ -->
+<section class="cta-banner">
+  <div class="cta-banner-bg"></div>
+  <div class="cta-banner-content">
+    <div style="font-size:48px;margin-bottom:16px;filter:drop-shadow(0 0 20px rgba(196,85,58,0.4))">👻</div>
+    <h2>Dare to Walk With Us?</h2>
+    <p>Tours fill up fast, especially on weekends. Book now and secure your spot on Galveston's most thrilling haunted experience.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a class="btn-primary" href="#booking">Book Your Tour</a>
+      <a class="cta-phone" href="tel:+14095551234">📞 Call (409) 555-1234</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ NEWSLETTER ═══════ -->
+<section class="newsletter-section">
+  <div class="newsletter-inner">
+    <div class="section-label" style="margin-bottom:12px">Stay Connected</div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:24px;margin:0 0 8px">Ghost Stories in Your Inbox</h3>
+    <p style="font-size:15px;color:var(--text-dim);margin-bottom:24px">Get exclusive ghost stories, seasonal specials, and early access to new tours.</p>
+    <div id="newsletterForm">
+      <div class="newsletter-form">
+        <input class="newsletter-input" type="email" placeholder="Enter your email" id="newsletterEmail">
+        <button class="newsletter-btn" onclick="subscribeNewsletter()">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+        <span style="font-size:24px">👻</span>
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700">GHOST TOURS</div>
+          <div style="font-size:10px;color:var(--gold);letter-spacing:3px">TEXAS</div>
+        </div>
+      </div>
+      <p class="footer-brand-desc">Galveston Island's premier haunted walking tour experience. Thrilling tales of murder, ghosts, and dark history for brave souls of all ages. Exploring Galveston's supernatural side since 2014.</p>
+      <div class="footer-social">
+        <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">YouTube</a><a href="#">Yelp</a>
+      </div>
+    </div>
+    <div>
+      <h4 class="footer-heading">Tours</h4>
+      <div class="footer-link">Haunted History Tour</div>
+      <div class="footer-link">Cemetery Shadows Tour</div>
+      <div class="footer-link">Spirits & Saloons Pub Crawl</div>
+      <div class="footer-link">Dark Secrets After Dark</div>
+      <div class="footer-link">Private Group Tours</div>
+      <div class="footer-link">Gift Cards</div>
+    </div>
+    <div>
+      <h4 class="footer-heading">Explore</h4>
+      <div class="footer-link">About Us</div>
+      <div class="footer-link">Our Guides</div>
+      <div class="footer-link">Haunted Locations</div>
+      <div class="footer-link">Blog & Stories</div>
+      <div class="footer-link">FAQ</div>
+      <div class="footer-link">Contact</div>
+    </div>
+    <div>
+      <h4 class="footer-heading">Contact</h4>
+      <div class="footer-link">📍 24th St & Sealy Ave</div>
+      <div class="footer-link">Galveston, TX 77550</div>
+      <div class="footer-link">📞 (409) 555-1234</div>
+      <div class="footer-link">✉️ info@ghosttourstexas.com</div>
+      <div class="footer-link">🕐 Tours Daily 8, 9, 10 PM</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copyright">© 2026 Ghost Tours of Texas™ · Galveston Island's #1 Haunted Tour Experience · All rights reserved.</div>
+    <div class="footer-legal">
+      <span>Terms & Conditions</span>
+      <span>Privacy Policy</span>
+      <span>Accessibility</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════ ADMIN DASHBOARD OVERLAY ═══════ -->
+<div class="admin-overlay" id="adminOverlay">
+  <div class="admin-header">
+    <div style="display:flex;align-items:center;gap:12px">
+      <span style="font-size:22px">👻</span>
+      <div class="admin-title">Ghost Tours Texas — Dashboard</div>
+    </div>
+    <button class="admin-close" onclick="toggleAdmin()">✕ Close Dashboard</button>
+  </div>
+  <div class="admin-tabs">
+    <button class="admin-tab active" onclick="switchAdminTab('overview')">📊 Overview</button>
+    <button class="admin-tab" onclick="switchAdminTab('reservations')">🎫 Reservations</button>
+    <button class="admin-tab" onclick="switchAdminTab('revenue')">💰 Revenue</button>
+    <button class="admin-tab" onclick="switchAdminTab('tours')">🏚️ Tour Management</button>
+    <button class="admin-tab" onclick="switchAdminTab('blog')">📝 Blog Manager</button>
+  </div>
+  <div class="admin-content" id="adminContent"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     JAVASCRIPT ENGINE
+     ═══════════════════════════════════════════════════ -->
+<script>
+// ═══════ DATA ═══════
+const TOURS = [
+  {
+    id:"haunted-history", name:"Haunted History Tour", tagline:"The Original Galveston Ghost Walk",
+    desc:"Step through the shadows of Galveston's most haunted district. Our flagship 90-minute walking tour takes you past gilded mansions and forgotten alleyways where murder, betrayal, and restless spirits left their mark forever.",
+    price:28, childPrice:20, duration:"90 min", time:"8:00 PM", ages:"All Ages",
+    rating:4.9, reviews:847, featured:true,
+    img:"https://images.unsplash.com/photo-1477346611705-65d1883cee1e?w=600&q=80",
+    highlights:["Sealy Mansion","Normandy Inn","Ashton Villa","Historic Strand"]
+  },
+  {
+    id:"cemetery-shadows", name:"Cemetery Shadows Tour", tagline:"Walk Among the Dead",
+    desc:"Descend into Galveston's oldest burial grounds after dark. Hear the whispered stories of 1900 Storm victims, Civil War soldiers, and yellow fever casualties who never truly found rest beneath ancient oaks.",
+    price:32, childPrice:22, duration:"90 min", time:"9:00 PM", ages:"All Ages",
+    rating:4.8, reviews:412, featured:false,
+    img:"https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=600&q=80",
+    highlights:["Old City Cemetery","Trinity Episcopal","1900 Storm Graves","Confederate Section"]
+  },
+  {
+    id:"spirits-saloons", name:"Spirits & Saloons Pub Crawl", tagline:"Drink With the Dead",
+    desc:"Combine Galveston's darkest ghost stories with its finest watering holes. Visit three haunted taverns along the Strand, each with its own chilling past and specialty cocktail.",
+    price:38, childPrice:null, duration:"2 hours", time:"9:30 PM", ages:"21+",
+    rating:4.9, reviews:623, featured:false,
+    img:"https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&q=80",
+    highlights:["3 Haunted Bars","Specialty Cocktails","Strand District","Adults Only"]
+  },
+  {
+    id:"dark-secrets", name:"Dark Secrets After Dark", tagline:"Not For the Faint of Heart",
+    desc:"Galveston's adults-only tour ventures into the island's most scandalous history — the red-light district, unsolved murders, and hauntings too disturbing for the family tour. Raw, unfiltered, unforgettable.",
+    price:35, childPrice:null, duration:"90 min", time:"10:00 PM", ages:"16+",
+    rating:4.9, reviews:538, featured:false,
+    img:"https://images.unsplash.com/photo-1520350094754-f0fdcac35c1c?w=600&q=80",
+    highlights:["Red Light District","Unsolved Murders","Prohibition Era","Adults Only"]
+  }
+];
+
+const LOCATIONS = [
+  { name:"The Sealy Mansion", year:"1889", type:"Mansion", desc:"George Sealy's elaborate mansion still echoes with the laughter of phantom children performing on the attic's Broadway stage. Magnolia Sealy wanders the halls, too shy to speak with the living.", img:"https://images.unsplash.com/photo-1464146072230-91cabc968266?w=800&q=80" },
+  { name:"The Normandy Inn", year:"1912", type:"Inn", desc:"Known as the 'Demon House,' this abandoned boarding house carries tales of a child's fatal fall, satanic rituals, and a little girl in white who still peers through darkened windows.", img:"https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=800&q=80" },
+  { name:"Ashton Villa", year:"1859", type:"Villa", desc:"Called 'the most haunted place in America,' this Civil War-era hospital is home to the sister specters Bettie and Tilly Brown, eternally bound to these Italianate halls.", img:"https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80" },
+  { name:"The Tremont House", year:"1839", type:"Hotel", desc:"Galveston's grand antebellum hotel hosts phantom dinner parties and mysterious piano melodies from guests who checked in centuries ago and never checked out.", img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" },
+  { name:"Old City Cemetery", year:"1839", type:"Cemetery", desc:"Galveston's oldest burial ground holds 1900 Storm victims, yellow fever casualties, and Confederate soldiers whose restless spirits manifest on moonless nights.", img:"https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=600&q=80" },
+  { name:"The Durst House", year:"2001", type:"Crime Scene", desc:"At 2213 Avenue K, millionaire heir Robert Durst hid disguised as a mute woman before committing one of Galveston's most gruesome modern crimes.", img:"https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80" }
+];
+
+const GUIDES = [
+  { name:"Captain Jack", title:"Lead Guide & Founder", specialty:"Historical Hauntings", bio:"A Galveston native with 15 years of paranormal investigation experience. Jack's tours blend meticulous historical research with genuine encounters featured on regional television.", img:"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
+  { name:"Miss Adelaide", title:"Senior Guide", specialty:"Cemetery & Civil War", bio:"A former history professor turned ghost tour guide, Adelaide brings academic rigor and theatrical flair to every tour. Her cemetery tours are legendary among repeat visitors.", img:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" },
+  { name:"Raven", title:"Night Guide", specialty:"Dark History & Pub Crawls", bio:"Specializing in the darker side of Galveston's past, Raven leads our adults-only tours through the island's most scandalous locations with unflinching honesty and dark humor.", img:"https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&q=80" }
+];
+
+const TESTIMONIALS = [
+  { name:"Sarah M.", loc:"Houston, TX", text:"Absolutely the best ghost tour we've ever taken. Our guide was incredibly knowledgeable and the stories were spine-tingling. My teenagers couldn't stop talking about it!", rating:5, date:"Feb 2026" },
+  { name:"David & Karen R.", loc:"Dallas, TX", text:"We've done ghost tours in New Orleans, Savannah, and Charleston — Galveston rivals them all. The history is rich and the hauntings feel genuinely real.", rating:5, date:"Jan 2026" },
+  { name:"Marcus T.", loc:"San Antonio, TX", text:"The pub crawl was incredible. Great stories, great drinks, great company. Our guide Raven had the whole group completely captivated. Will absolutely come back.", rating:5, date:"Jan 2026" },
+  { name:"Jennifer L.", loc:"Austin, TX", text:"Brought my daughter's birthday group of 12 kids. Every single one loved it. Educational, spooky, and age-appropriate. Already planning to return for Halloween!", rating:5, date:"Dec 2025" },
+  { name:"Robert & Lisa K.", loc:"Oklahoma City, OK", text:"The cemetery tour gave us actual chills. We captured something unexplainable in our photos that night. This tour is the real deal.", rating:5, date:"Nov 2025" },
+  { name:"Amanda S.", loc:"Corpus Christi, TX", text:"Third time taking this tour and I learn something new every time. The guides rotate stories and each brings something unique. A Galveston must-do!", rating:5, date:"Oct 2025" }
+];
+
+const BLOG_POSTS = [
+  { title:"The Untold Story of the Sealy Mansion Children", date:"Feb 20, 2026", excerpt:"For over a century, visitors have reported hearing children's laughter echoing from the attic of the Sealy Mansion. But who were these children, and why do they continue to perform on their phantom Broadway stage?", img:"https://images.unsplash.com/photo-1464146072230-91cabc968266?w=600&q=80", category:"Haunted History" },
+  { title:"5 Signs You've Encountered a Real Ghost on Our Tour", date:"Feb 12, 2026", excerpt:"Our guides have witnessed thousands of paranormal encounters. Here are the telltale signs that your experience wasn't just your imagination playing tricks in the dark...", img:"https://images.unsplash.com/photo-1505635552518-3b72d4838804?w=600&q=80", category:"Paranormal Guide" },
+  { title:"The Great Storm of 1900: Galveston's Darkest Chapter", date:"Jan 28, 2026", excerpt:"Over 8,000 souls were lost in a single night. The deadliest natural disaster in American history left scars on Galveston that can still be felt — and seen — to this day.", img:"https://images.unsplash.com/photo-1527482797697-8795b05a13fe?w=600&q=80", category:"Galveston History" }
+];
+
+const FAQS = [
+  { q:"How long are the tours?", a:"Most tours are 90 minutes. The Spirits & Saloons Pub Crawl runs approximately 2 hours. All tours involve easy walking at a leisurely pace covering about half a mile." },
+  { q:"Are tours suitable for children?", a:"Our Haunted History Tour and Cemetery Shadows Tour are family-friendly and appropriate for all ages. Children under 12 must be accompanied by an adult. Our Dark Secrets and Pub Crawl tours are adults-only (16+ and 21+ respectively)." },
+  { q:"Do tours run in the rain?", a:"Yes! Tours run rain or shine — after all, ghosts don't take weather days. We recommend bringing an umbrella or poncho. Tours are only cancelled in case of severe weather warnings." },
+  { q:"Where do tours meet?", a:"All tours meet at our starting point on the corner of 24th Street and Sealy Avenue, across from the Rosenberg Library. Free street parking and lot parking are available nearby." },
+  { q:"Can I book a private or group tour?", a:"Absolutely! We offer private tours for groups of 10 or more, with custom routes available. Perfect for corporate events, bachelorette parties, school trips, and team building. Call us for group pricing." },
+  { q:"What is the cancellation policy?", a:"Full refunds are available up to 24 hours before your scheduled tour. Cancellations within 24 hours may be rescheduled for a future date subject to availability." },
+  { q:"Do you offer gift cards?", a:"Yes! Ghost tour gift cards make the perfect unique gift. Available in any denomination and redeemable for any of our tour experiences. Purchase online or by phone." },
+  { q:"Is the tour wheelchair accessible?", a:"Our walking tours cover flat terrain and sidewalks, but some stops may have uneven ground. Please contact us in advance so we can accommodate any accessibility needs." }
+];
+
+// Sample reservation data for admin
+const RESERVATIONS = [
+  { id:"GTT-2026-001", name:"Sarah Mitchell", tour:"Haunted History", date:"Feb 28, 2026", guests:4, total:112, status:"confirmed", email:"sarah@email.com" },
+  { id:"GTT-2026-002", name:"James & Maria Lopez", tour:"Cemetery Shadows", date:"Feb 28, 2026", guests:2, total:64, status:"confirmed", email:"jlopez@email.com" },
+  { id:"GTT-2026-003", name:"Tom Henderson", tour:"Spirits & Saloons", date:"Mar 1, 2026", guests:6, total:228, status:"pending", email:"tom.h@email.com" },
+  { id:"GTT-2026-004", name:"Karen O'Brien", tour:"Dark Secrets", date:"Mar 1, 2026", guests:2, total:70, status:"confirmed", email:"karen.ob@email.com" },
+  { id:"GTT-2026-005", name:"David Park", tour:"Haunted History", date:"Mar 2, 2026", guests:3, total:84, status:"confirmed", email:"dpark@email.com" },
+  { id:"GTT-2026-006", name:"Lisa Chen", tour:"Cemetery Shadows", date:"Mar 2, 2026", guests:1, total:32, status:"pending", email:"lchen@email.com" },
+  { id:"GTT-2026-007", name:"Mike & Amy Foster", tour:"Spirits & Saloons", date:"Mar 3, 2026", guests:4, total:152, status:"cancelled", email:"mfoster@email.com" },
+  { id:"GTT-2026-008", name:"Rachel Kim", tour:"Haunted History", date:"Mar 3, 2026", guests:8, total:224, status:"confirmed", email:"rkim@email.com" },
+  { id:"GTT-2026-009", name:"Corporate Group - TechCo", tour:"Private Tour", date:"Mar 5, 2026", guests:25, total:625, status:"confirmed", email:"events@techco.com" },
+  { id:"GTT-2026-010", name:"Jennifer Walsh", tour:"Dark Secrets", date:"Mar 7, 2026", guests:2, total:70, status:"pending", email:"jwals@email.com" }
+];
+
+const MONTHLY_REVENUE = [
+  { month:"Sep", revenue:8420 }, { month:"Oct", revenue:18750 }, { month:"Nov", revenue:11200 },
+  { month:"Dec", revenue:14800 }, { month:"Jan", revenue:7350 }, { month:"Feb", revenue:12600 }
+];
+
+// ═══════ STATE ═══════
+let activeLocation = 0;
+let bookingMode = 'fareharbor';
+let bookingStep = 1;
+let selectedTour = TOURS[0].id;
+let guests = { adults: 2, children: 0 };
+let selectedDate = '';
+let contactInfo = { name: '', email: '', phone: '' };
+let bookingComplete = false;
+let adminTab = 'overview';
+
+// ═══════ RENDER FUNCTIONS ═══════
+
+function renderTours() {
+  document.getElementById('toursGrid').innerHTML = TOURS.map(t => `
+    <article class="tour-card" itemscope itemtype="https://schema.org/TouristTrip">
+      ${t.featured ? '<div class="tour-card-badge">Most Popular</div>' : ''}
+      <img class="tour-card-image" src="${t.img}" alt="${t.name} - Ghost Tours Texas Galveston" loading="lazy">
+      <div class="tour-card-body">
+        <div class="tour-card-tagline">${t.tagline}</div>
+        <h3 class="tour-card-name" itemprop="name">${t.name}</h3>
+        <p class="tour-card-desc" itemprop="description">${t.desc}</p>
+        <div class="tour-card-tags">
+          <span class="tour-tag">${t.duration}</span>
+          <span class="tour-tag">${t.time}</span>
+          <span class="tour-tag">${t.ages}</span>
+        </div>
+        <div class="tour-card-footer">
+          <div>
+            <div class="tour-rating">${'★'.repeat(Math.floor(t.rating))} ${t.rating}</div>
+            <div class="tour-reviews">${t.reviews} reviews</div>
+          </div>
+          <div>
+            <div class="tour-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price">$${t.price}</span>
+              <meta itemprop="priceCurrency" content="USD">
+            </div>
+            <div class="tour-price-sub">per adult${t.childPrice ? ' · $'+t.childPrice+' child':''}</div>
+          </div>
+        </div>
+        <button class="tour-card-btn" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">Book This Tour</button>
+      </div>
+    </article>
+  `).join('');
+}
+
+function renderLocations() {
+  const list = document.getElementById('locationsList');
+  list.innerHTML = LOCATIONS.map((l, i) => `
+    <button class="location-btn ${i === activeLocation ? 'active' : ''}" onclick="setLocation(${i})">
+      <div class="location-dot"></div>
+      <div>
+        <div class="location-name">${l.name}</div>
+        <div class="location-meta">${l.type} · Est. ${l.year}</div>
+      </div>
+    </button>
+  `).join('');
+
+  const loc = LOCATIONS[activeLocation];
+  document.getElementById('locationDetail').innerHTML = `
+    <img class="location-detail-img" src="${loc.img}" alt="${loc.name} - Haunted Location Galveston" loading="lazy">
+    <div class="location-detail-body">
+      <div class="location-detail-year">${loc.year}</div>
+      <div class="location-detail-type">${loc.type}</div>
+      <h3 class="location-detail-name">${loc.name}</h3>
+      <div style="font-size:14px;color:var(--text-muted)">Established ${loc.year} · Galveston Island, Texas</div>
+      <p class="location-detail-desc">${loc.desc}</p>
+      <div class="location-badges">
+        <span class="location-badge paranormal">✦ Documented Paranormal Activity</span>
+        <span class="location-badge featured">✦ Featured on Tour</span>
+      </div>
+    </div>
+  `;
+}
+
+function setLocation(i) { activeLocation = i; renderLocations(); }
+
+function renderGuides() {
+  document.getElementById('guidesGrid').innerHTML = GUIDES.map(g => `
+    <div class="guide-card">
+      <img class="guide-card-img" src="${g.img}" alt="${g.name} - Ghost Tour Guide Galveston" loading="lazy">
+      <div class="guide-card-body">
+        <div class="guide-specialty">${g.specialty}</div>
+        <h3 class="guide-name">${g.name}</h3>
+        <div class="guide-title">${g.title}</div>
+        <p class="guide-bio">${g.bio}</p>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderTestimonials() {
+  document.getElementById('testimonialsGrid').innerHTML = TESTIMONIALS.map(t => `
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-stars">${'★'.repeat(t.rating)}</div>
+      <p class="testimonial-text">"${t.text}"</p>
+      <div class="testimonial-author">— ${t.name}</div>
+      <div class="testimonial-meta">${t.loc} · ${t.date}</div>
+    </div>
+  `).join('');
+}
+
+function renderBlog() {
+  document.getElementById('blogGrid').innerHTML = BLOG_POSTS.map(p => `
+    <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+      <img class="blog-card-img" src="${p.img}" alt="${p.title}" loading="lazy">
+      <div class="blog-card-body">
+        <div class="blog-card-date">${p.category} · ${p.date}</div>
+        <h3 class="blog-card-title" itemprop="headline">${p.title}</h3>
+        <p class="blog-card-excerpt" itemprop="description">${p.excerpt}</p>
+        <span class="blog-card-link">Read Full Story →</span>
+      </div>
+    </article>
+  `).join('');
+}
+
+function renderFAQ() {
+  document.getElementById('faqList').innerHTML = FAQS.map((f, i) => `
+    <div class="faq-item" id="faq-${i}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <button class="faq-question" onclick="toggleFAQ(${i})">
+        <span class="faq-question-text" itemprop="name">${f.q}</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <p itemprop="text">${f.a}</p>
+      </div>
+    </div>
+  `).join('');
+}
+
+function toggleFAQ(i) {
+  const item = document.getElementById('faq-'+i);
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+
+// ═══════ BOOKING ═══════
+
+function setBookingMode(mode) {
+  bookingMode = mode;
+  bookingStep = 1;
+  bookingComplete = false;
+  document.querySelectorAll('.booking-mode-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  renderBooking();
+}
+
+function renderBooking() {
+  const tour = TOURS.find(t => t.id === selectedTour);
+  const total = tour ? guests.adults * tour.price + guests.children * (tour.childPrice||0) : 0;
+
+  if (bookingMode === 'fareharbor') {
+    document.getElementById('bookingContent').innerHTML = `
+      <div class="booking-card" style="padding:40px;text-align:center">
+        <p style="font-size:18px;color:var(--text-dim);margin-bottom:24px">Book instantly through our secure FareHarbor partner. See real-time availability and confirm in seconds.</p>
+        <div class="fareharbor-embed">
+          <div style="font-size:48px;margin-bottom:16px">🎫</div>
+          <p style="font-size:14px;color:var(--text-muted);margin-bottom:20px">FareHarbor booking widget embeds here.<br>Add the script tag below to enable instant booking.</p>
+          <a href="https://fareharbor.com/embeds/book/ghosttourstexas/?full-items=yes&language=en-us" target="_blank" rel="noopener" class="btn-primary" style="display:inline-block;text-decoration:none">Book on FareHarbor →</a>
+        </div>
+        <div style="margin-top:24px;padding:16px;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.15);border-radius:6px;text-align:left">
+          <div style="font-size:14px;color:var(--gold);font-weight:600;margin-bottom:8px">💡 FareHarbor Integration Guide</div>
+          <div style="font-size:13px;color:var(--text-muted);line-height:1.7">
+            Add this script before &lt;/body&gt; to embed the FareHarbor widget directly:<br>
+            <code style="color:var(--accent);font-family:'JetBrains Mono',monospace;font-size:12px">&lt;script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"&gt;&lt;/script&gt;</code><br><br>
+            Then add booking links with <code style="color:var(--accent);font-family:'JetBrains Mono',monospace;font-size:12px">href="https://fareharbor.com/embeds/book/ghosttourstexas/"</code> to any button.
+          </div>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  if (bookingComplete) {
+    document.getElementById('bookingContent').innerHTML = `
+      <div class="booking-card"><div class="booking-body booking-confirmed">
+        <div class="booking-confirmed-icon">👻</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:28px;margin:0 0 12px">Booking Confirmed!</h3>
+        <p style="font-size:18px;color:var(--text-dim)">A confirmation email has been sent to ${contactInfo.email}.<br>See you in the shadows...</p>
+        <button class="btn-primary" style="margin-top:24px" onclick="resetBooking()">Book Another Tour</button>
+      </div></div>`;
+    return;
+  }
+
+  const steps = ['Select Tour','Choose Date','Your Details','Confirm'];
+  let stepHTML = '';
+
+  if (bookingStep === 1) {
+    stepHTML = `
+      <h3 style="font-family:'Playfair Display',serif;font-size:20px;margin:0 0 20px">Select Your Tour</h3>
+      ${TOURS.map(t => `
+        <button class="booking-tour-option ${selectedTour===t.id?'selected':''}" onclick="selectedTour='${t.id}';renderBooking()">
+          <div>
+            <div class="booking-tour-name">${t.name}</div>
+            <div class="booking-tour-meta">${t.duration} · ${t.time} · ${t.ages}</div>
+          </div>
+          <div class="booking-tour-price">$${t.price}</div>
+        </button>
+      `).join('')}
+      <div style="margin-top:24px;display:flex;gap:24px;flex-wrap:wrap">
+        <div>
+          <label class="form-label">Adults</label>
+          <div class="guest-stepper">
+            <button class="stepper-btn" onclick="guests.adults=Math.max(1,guests.adults-1);renderBooking()">−</button>
+            <span class="stepper-value">${guests.adults}</span>
+            <button class="stepper-btn" onclick="guests.adults++;renderBooking()">+</button>
+          </div>
+        </div>
+        ${tour && tour.childPrice ? `<div>
+          <label class="form-label">Children</label>
+          <div class="guest-stepper">
+            <button class="stepper-btn" onclick="guests.children=Math.max(0,guests.children-1);renderBooking()">−</button>
+            <span class="stepper-value">${guests.children}</span>
+            <button class="stepper-btn" onclick="guests.children++;renderBooking()">+</button>
+          </div>
+        </div>` : ''}
+      </div>
+    `;
+  } else if (bookingStep === 2) {
+    stepHTML = `
+      <h3 style="font-family:'Playfair Display',serif;font-size:20px;margin:0 0 20px">Choose Your Date</h3>
+      <div class="form-group">
+        <input class="form-input" type="date" value="${selectedDate}" onchange="selectedDate=this.value" min="${new Date().toISOString().split('T')[0]}" style="color-scheme:dark">
+      </div>
+      <div style="margin-top:20px;padding:16px;background:rgba(201,168,76,0.06);border-radius:6px;border:1px solid rgba(201,168,76,0.15)">
+        <div style="font-size:14px;color:var(--gold)">🕐 Tour Time: ${tour?.time} · Duration: ${tour?.duration}</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:6px">Please arrive 15 minutes before your scheduled tour at 24th St & Sealy Ave.</div>
+      </div>
+    `;
+  } else if (bookingStep === 3) {
+    stepHTML = `
+      <h3 style="font-family:'Playfair Display',serif;font-size:20px;margin:0 0 20px">Your Details</h3>
+      <div class="form-group"><label class="form-label">Full Name</label><input class="form-input" type="text" value="${contactInfo.name}" onchange="contactInfo.name=this.value" placeholder="John Smith"></div>
+      <div class="form-group"><label class="form-label">Email Address</label><input class="form-input" type="email" value="${contactInfo.email}" onchange="contactInfo.email=this.value" placeholder="john@example.com"></div>
+      <div class="form-group"><label class="form-label">Phone Number</label><input class="form-input" type="tel" value="${contactInfo.phone}" onchange="contactInfo.phone=this.value" placeholder="(409) 555-1234"></div>
+    `;
+  } else if (bookingStep === 4) {
+    stepHTML = `
+      <h3 style="font-family:'Playfair Display',serif;font-size:20px;margin:0 0 20px">Confirm Your Booking</h3>
+      <div class="booking-summary">
+        <div><div class="summary-label">Tour</div><div class="summary-value">${tour?.name}</div></div>
+        <div><div class="summary-label">Date</div><div class="summary-value">${selectedDate || 'Not selected'}</div></div>
+        <div><div class="summary-label">Time</div><div class="summary-value">${tour?.time}</div></div>
+        <div><div class="summary-label">Guests</div><div class="summary-value">${guests.adults} adult${guests.adults>1?'s':''}${guests.children>0?', '+guests.children+' child'+(guests.children>1?'ren':''):''}</div></div>
+        <div><div class="summary-label">Name</div><div class="summary-value">${contactInfo.name || '—'}</div></div>
+        <div><div class="summary-label">Email</div><div class="summary-value">${contactInfo.email || '—'}</div></div>
+      </div>
+      <div class="booking-total">
+        <div style="font-size:16px;color:var(--text-dim)">Total</div>
+        <div class="total-amount">$${total.toFixed(2)}</div>
+      </div>
+    `;
+  }
+
+  document.getElementById('bookingContent').innerHTML = `
+    <div class="booking-card">
+      <div class="booking-steps">
+        ${steps.map((s,i) => `<button class="booking-step ${bookingStep===i+1?'active':''} ${bookingStep>i+1?'completed':''}">${bookingStep>i+1?'✓ ':''}${s}</button>`).join('')}
+      </div>
+      <div class="booking-body">
+        ${stepHTML}
+        <div class="booking-nav">
+          ${bookingStep > 1 ? `<button class="btn-outline" style="padding:12px 28px;font-size:14px" onclick="bookingStep--;renderBooking()">← Back</button>` : '<div></div>'}
+          <button class="btn-primary" style="padding:12px 32px;font-size:14px" onclick="${bookingStep < 4 ? 'bookingStep++;renderBooking()' : 'bookingComplete=true;renderBooking()'}">${bookingStep < 4 ? 'Continue →' : 'Confirm & Pay'}</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function resetBooking() {
+  bookingStep = 1;
+  bookingComplete = false;
+  contactInfo = { name:'', email:'', phone:'' };
+  selectedDate = '';
+  guests = { adults: 2, children: 0 };
+  renderBooking();
+}
+
+// ═══════ ADMIN DASHBOARD ═══════
+
+function toggleAdmin() {
+  const overlay = document.getElementById('adminOverlay');
+  overlay.classList.toggle('active');
+  document.body.style.overflow = overlay.classList.contains('active') ? 'hidden' : '';
+  if (overlay.classList.contains('active')) renderAdmin();
+}
+
+function switchAdminTab(tab) {
+  adminTab = tab;
+  document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  renderAdmin();
+}
+
+function renderAdmin() {
+  const content = document.getElementById('adminContent');
+  const totalRev = RESERVATIONS.filter(r=>r.status!=='cancelled').reduce((s,r)=>s+r.total,0);
+  const totalGuests = RESERVATIONS.filter(r=>r.status!=='cancelled').reduce((s,r)=>s+r.guests,0);
+  const confirmed = RESERVATIONS.filter(r=>r.status==='confirmed').length;
+  const pending = RESERVATIONS.filter(r=>r.status==='pending').length;
+  const maxRev = Math.max(...MONTHLY_REVENUE.map(m=>m.revenue));
+
+  if (adminTab === 'overview') {
+    content.innerHTML = `
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-card-label">Total Revenue (Period)</div><div class="stat-card-value" style="color:var(--success)">$${totalRev.toLocaleString()}</div><div class="stat-card-change up">↑ 18% vs last period</div></div>
+        <div class="stat-card"><div class="stat-card-label">Total Reservations</div><div class="stat-card-value">${RESERVATIONS.length}</div><div class="stat-card-change up">↑ ${confirmed} confirmed · ${pending} pending</div></div>
+        <div class="stat-card"><div class="stat-card-label">Total Guests Booked</div><div class="stat-card-value">${totalGuests}</div><div class="stat-card-change up">↑ 24% vs last month</div></div>
+        <div class="stat-card"><div class="stat-card-label">Avg Booking Value</div><div class="stat-card-value">$${(totalRev/RESERVATIONS.filter(r=>r.status!=='cancelled').length).toFixed(0)}</div><div class="stat-card-change up">↑ 8% vs last month</div></div>
+        <div class="stat-card"><div class="stat-card-label">Average Rating</div><div class="stat-card-value" style="color:var(--gold)">4.9 ★</div><div class="stat-card-change up">Based on 2,420 reviews</div></div>
+        <div class="stat-card"><div class="stat-card-label">Conversion Rate</div><div class="stat-card-value">12.4%</div><div class="stat-card-change up">↑ 2.1% vs last month</div></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-header">
+          <div class="chart-title">Revenue Trend (6 Months)</div>
+          <div class="chart-filters">
+            <button class="chart-filter active">6 Mo</button>
+            <button class="chart-filter">1 Year</button>
+          </div>
+        </div>
+        <div class="chart-bars">
+          ${MONTHLY_REVENUE.map(m => `
+            <div class="chart-bar-col">
+              <div class="chart-bar" style="height:${(m.revenue/maxRev)*170}px"><div class="chart-bar-value">$${(m.revenue/1000).toFixed(1)}k</div></div>
+              <div class="chart-bar-label">${m.month}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div class="chart-card">
+          <div class="chart-title" style="margin-bottom:20px">Tour Popularity</div>
+          ${TOURS.map(t => `
+            <div class="capacity-item">
+              <div class="capacity-header"><span>${t.name}</span><span style="color:var(--text-muted)">${t.reviews} bookings</span></div>
+              <div class="capacity-bar-bg"><div class="capacity-bar-fill" style="width:${(t.reviews/847)*100}%"></div></div>
+            </div>
+          `).join('')}
+        </div>
+        <div class="chart-card">
+          <div class="chart-title" style="margin-bottom:20px">Tonight's Capacity</div>
+          ${[{tour:'8 PM — Haunted History',booked:18,cap:25},{tour:'9 PM — Cemetery Shadows',booked:12,cap:20},{tour:'9:30 PM — Spirits & Saloons',booked:14,cap:15},{tour:'10 PM — Dark Secrets',booked:8,cap:20}].map(c => `
+            <div class="capacity-item">
+              <div class="capacity-header"><span>${c.tour}</span><span style="color:${c.booked>=c.cap?'var(--danger)':'var(--text-muted)'}">${c.booked}/${c.cap}</span></div>
+              <div class="capacity-bar-bg"><div class="capacity-bar-fill" style="width:${(c.booked/c.cap)*100}%;${c.booked>=c.cap*0.9?'background:linear-gradient(90deg,var(--warning),var(--danger))':''}"></div></div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  } else if (adminTab === 'reservations') {
+    content.innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:12px">
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px">Reservations</h3>
+        <div style="display:flex;gap:8px">
+          <button class="chart-filter active">All (${RESERVATIONS.length})</button>
+          <button class="chart-filter">Confirmed (${confirmed})</button>
+          <button class="chart-filter">Pending (${pending})</button>
+        </div>
+      </div>
+      <div class="chart-card" style="overflow-x:auto">
+        <table class="data-table">
+          <thead><tr>
+            <th>ID</th><th>Guest</th><th>Tour</th><th>Date</th><th>Guests</th><th>Total</th><th>Status</th><th>Actions</th>
+          </tr></thead>
+          <tbody>
+            ${RESERVATIONS.map(r => `<tr>
+              <td style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-muted)">${r.id}</td>
+              <td><div style="font-weight:600;color:var(--text)">${r.name}</div><div style="font-size:12px;color:var(--text-muted)">${r.email}</div></td>
+              <td>${r.tour}</td>
+              <td>${r.date}</td>
+              <td>${r.guests}</td>
+              <td style="font-family:'JetBrains Mono',monospace;font-weight:600">$${r.total}</td>
+              <td><span class="status-badge ${r.status}">${r.status}</span></td>
+              <td><button class="blog-admin-btn" style="font-size:11px">View</button></td>
+            </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  } else if (adminTab === 'revenue') {
+    const monthlyTotal = MONTHLY_REVENUE.reduce((s,m)=>s+m.revenue,0);
+    content.innerHTML = `
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-card-label">6-Month Total</div><div class="stat-card-value" style="color:var(--success)">$${monthlyTotal.toLocaleString()}</div></div>
+        <div class="stat-card"><div class="stat-card-label">Monthly Average</div><div class="stat-card-value">$${(monthlyTotal/6).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g,',')}</div></div>
+        <div class="stat-card"><div class="stat-card-label">Best Month</div><div class="stat-card-value" style="color:var(--gold)">October</div><div class="stat-card-change">$18,750 (Halloween season)</div></div>
+        <div class="stat-card"><div class="stat-card-label">YoY Growth</div><div class="stat-card-value" style="color:var(--success)">+22%</div><div class="stat-card-change up">vs same period last year</div></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-header"><div class="chart-title">Monthly Revenue Breakdown</div></div>
+        <div class="chart-bars" style="height:240px">
+          ${MONTHLY_REVENUE.map(m => `
+            <div class="chart-bar-col">
+              <div class="chart-bar" style="height:${(m.revenue/maxRev)*200}px"><div class="chart-bar-value">$${m.revenue.toLocaleString()}</div></div>
+              <div class="chart-bar-label">${m.month}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div class="chart-card">
+          <div class="chart-title" style="margin-bottom:20px">Revenue by Tour Type</div>
+          ${[{name:'Haunted History',rev:28400,pct:38},{name:'Cemetery Shadows',rev:13200,pct:18},{name:'Spirits & Saloons',rev:19800,pct:27},{name:'Dark Secrets',rev:11720,pct:16}].map(t => `
+            <div class="capacity-item">
+              <div class="capacity-header"><span>${t.name}</span><span style="font-family:'JetBrains Mono',monospace;font-size:13px">$${t.rev.toLocaleString()} (${t.pct}%)</span></div>
+              <div class="capacity-bar-bg"><div class="capacity-bar-fill" style="width:${t.pct*2.5}%"></div></div>
+            </div>
+          `).join('')}
+        </div>
+        <div class="chart-card">
+          <div class="chart-title" style="margin-bottom:20px">Revenue by Channel</div>
+          ${[{name:'FareHarbor Online',pct:52},{name:'Walk-ins',pct:18},{name:'Phone Bookings',pct:15},{name:'Group/Private Tours',pct:12},{name:'Gift Cards',pct:3}].map(c => `
+            <div class="capacity-item">
+              <div class="capacity-header"><span>${c.name}</span><span style="color:var(--text-muted)">${c.pct}%</span></div>
+              <div class="capacity-bar-bg"><div class="capacity-bar-fill" style="width:${c.pct*1.8}%"></div></div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  } else if (adminTab === 'tours') {
+    content.innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px">Tour Management</h3>
+        <button class="btn-primary" style="padding:10px 24px;font-size:13px">+ Add New Tour</button>
+      </div>
+      ${TOURS.map(t => `
+        <div class="chart-card" style="display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+          <img src="${t.img}" style="width:120px;height:80px;object-fit:cover;border-radius:6px;filter:brightness(0.7)" alt="${t.name}">
+          <div style="flex:1;min-width:200px">
+            <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:600">${t.name}</div>
+            <div style="font-size:13px;color:var(--text-muted);margin-top:4px">${t.duration} · ${t.time} · ${t.ages} · $${t.price}/adult${t.childPrice?' · $'+t.childPrice+'/child':''}</div>
+            <div style="font-size:13px;color:var(--gold);margin-top:4px">${'★'.repeat(Math.floor(t.rating))} ${t.rating} (${t.reviews} reviews)</div>
+          </div>
+          <div style="display:flex;gap:8px">
+            <span class="status-badge confirmed">Active</span>
+            <button class="blog-admin-btn">Edit</button>
+            <button class="blog-admin-btn">Schedule</button>
+            <button class="blog-admin-btn">Analytics</button>
+          </div>
+        </div>
+      `).join('')}
+      <div class="chart-card" style="margin-top:32px">
+        <div class="chart-title" style="margin-bottom:20px">Tonight's Schedule</div>
+        <table class="data-table">
+          <thead><tr><th>Time</th><th>Tour</th><th>Guide</th><th>Booked</th><th>Capacity</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>8:00 PM</td><td>Haunted History</td><td>Captain Jack</td><td>18</td><td>25</td><td><span class="status-badge confirmed">Open</span></td></tr>
+            <tr><td>9:00 PM</td><td>Cemetery Shadows</td><td>Miss Adelaide</td><td>12</td><td>20</td><td><span class="status-badge confirmed">Open</span></td></tr>
+            <tr><td>9:30 PM</td><td>Spirits & Saloons</td><td>Raven</td><td>14</td><td>15</td><td><span class="status-badge pending">Nearly Full</span></td></tr>
+            <tr><td>10:00 PM</td><td>Dark Secrets</td><td>Raven</td><td>8</td><td>20</td><td><span class="status-badge confirmed">Open</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    `;
+  } else if (adminTab === 'blog') {
+    content.innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px">Blog Manager</h3>
+        <button class="btn-primary" style="padding:10px 24px;font-size:13px">+ New Post</button>
+      </div>
+      <div class="chart-card" style="margin-bottom:24px;padding:20px">
+        <div style="font-size:14px;color:var(--gold);font-weight:600;margin-bottom:12px">📈 Blog SEO Performance</div>
+        <div class="stats-grid" style="margin-bottom:0">
+          <div class="stat-card" style="padding:16px"><div class="stat-card-label" style="font-size:10px">Monthly Visitors</div><div class="stat-card-value" style="font-size:24px">3,847</div><div class="stat-card-change up">↑ 34% from blog content</div></div>
+          <div class="stat-card" style="padding:16px"><div class="stat-card-label" style="font-size:10px">Organic Keywords</div><div class="stat-card-value" style="font-size:24px">142</div><div class="stat-card-change up">↑ 28 new this month</div></div>
+          <div class="stat-card" style="padding:16px"><div class="stat-card-label" style="font-size:10px">Top Search Term</div><div class="stat-card-value" style="font-size:16px">"galveston ghost tours"</div><div class="stat-card-change">#3 on Google</div></div>
+        </div>
+      </div>
+      ${BLOG_POSTS.map((p,i) => `
+        <div class="blog-admin-card">
+          <img src="${p.img}" style="width:80px;height:60px;object-fit:cover;border-radius:4px;filter:brightness(0.7)" alt="">
+          <div style="flex:1">
+            <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">${p.title}</div>
+            <div style="font-size:12px;color:var(--text-muted);margin-top:4px">${p.category} · ${p.date} · 1,${200+i*340} views</div>
+          </div>
+          <div class="blog-admin-status">Published</div>
+          <div class="blog-admin-actions">
+            <button class="blog-admin-btn">Edit</button>
+            <button class="blog-admin-btn">Analytics</button>
+            <button class="blog-admin-btn delete">Delete</button>
+          </div>
+        </div>
+      `).join('')}
+      <div class="chart-card" style="margin-top:24px">
+        <div class="chart-title" style="margin-bottom:16px">Suggested Blog Topics for SEO</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          ${[
+            {topic:'The Haunted Hotels of Galveston: A Complete Guide', kw:'galveston haunted hotels', vol:'2,400/mo'},
+            {topic:'Galveston 1900 Storm Ghost Stories & Survivors', kw:'galveston 1900 storm ghosts', vol:'1,800/mo'},
+            {topic:'Is Galveston the Most Haunted City in Texas?', kw:'most haunted city texas', vol:'3,100/mo'},
+            {topic:'Best Ghost Tours in Texas: Complete 2026 Guide', kw:'ghost tours texas', vol:'4,200/mo'},
+            {topic:'Paranormal Investigation Tips for Ghost Tour Guests', kw:'ghost hunting tips beginners', vol:'6,800/mo'}
+          ].map(s => `
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(200,195,188,0.03);border-radius:4px">
+              <div>
+                <div style="font-size:15px;color:var(--text)">${s.topic}</div>
+                <div style="font-size:12px;color:var(--text-muted);margin-top:2px">Target: "${s.kw}" · ${s.vol}</div>
+              </div>
+              <button class="blog-admin-btn">Draft</button>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+}
+
+// ═══════ UI HELPERS ═══════
+
+function toggleMobile() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+  const btn = document.querySelector('.mobile-toggle');
+  btn.textContent = document.getElementById('mobileMenu').classList.contains('open') ? '✕' : '☰';
+}
+function closeMobile() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.querySelector('.mobile-toggle').textContent = '☰';
+}
+
+function subscribeNewsletter() {
+  const email = document.getElementById('newsletterEmail').value;
+  if (email) {
+    document.getElementById('newsletterForm').innerHTML = '<div style="font-size:16px;color:var(--gold)">✓ Welcome to the haunted side. Check your email...</div>';
+  }
+}
+
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Create ghost particles
+function createParticles() {
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 15; i++) {
+    const p = document.createElement('div');
+    p.className = 'ghost-particle';
+    p.style.width = p.style.height = (2 + Math.random() * 3) + 'px';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.top = Math.random() * 100 + '%';
+    p.style.animationDuration = (8 + Math.random() * 12) + 's';
+    p.style.animationDelay = Math.random() * 10 + 's';
+    container.appendChild(p);
+  }
+}
+
+// ═══════ INIT ═══════
+createParticles();
+renderTours();
+renderLocations();
+renderGuides();
+renderTestimonials();
+renderBlog();
+renderFAQ();
+renderBooking();
+</script>
+
+</body>
+</html>
